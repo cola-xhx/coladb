@@ -1,1 +1,22 @@
+HBuilder 连接 夜神安卓模拟器
+在HBuilder中，找到 工具-》选择-》HBuilder，找到设置第三方模拟器的端口，设置为 62001 
+ 由于HBuilder的自动扫描机制无法直接连上夜神模拟器，需要通过cmd命令窗口手动处理，才能将两者建立连接。
+首先，启动HBuilder和夜神模拟器 
+然后，打开cmd命令提示符 
+cd进入夜神模拟器bin目录 
+执行以下命令
+Cd F:\夜神模拟器\Nox\bin
+nox_adb connect 127.0.0.1:62001 
+nox_adb devices
+然后cd进入HBuilder的tools目录 
+执行以下命令 
+Cd F:\大学\HBuilderX\update\patch\plugins\launcher\tools\adbs
+adb connect 127.0.0.1:62001 
+adb devices
+最后 就可以直接在HBuilder点击运行了。
+
+
+
+
+
 
